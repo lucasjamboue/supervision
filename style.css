@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 20px;
+    background-color: #003a8f;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* HR GLOBAL (plus propre) */
+hr {
+    border: none;
+    height: 2px;
+    background-color: grey;
+    margin: 0;
+}
+
+/* LAYOUT */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* SIDEBAR */
+aside {
+    width: 220px;
+    padding: 15px;
+    background-color: #1f2a44;
+    color: white;
+    border-right: 2px solid grey;
+}
+
+/* HR DANS SIDEBAR */
+aside hr {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+}
+
+/* LIENS SIDEBAR */
+aside a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: white;
+}
+
+aside ul {
+    padding-left: 0;
+    padding-top: 10%;
+}
+
+aside li {
+    list-style: none;
+    margin-bottom: 20%; /* espace entre les graphiques */
+}
+
+/* CONTENU */
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #003a8f;
+    color: white;
+}
