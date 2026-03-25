@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 17px 20px;
-    background-color: #003a8f;
+    background-color: rgb(0, 86, 119);
     color: white;
 }
 
@@ -45,7 +45,7 @@ main {
 aside {
     width: 220px;
     padding: 15px;
-    background-color: #1f2a44;
+    background-color: rgb(13, 163, 221);
     color: white;
     border-right: 2px solid grey;
 }
@@ -135,6 +135,6 @@ th {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: #003a8f;
+    background-color: rgb(0, 86, 119);
     color: white;
 }
