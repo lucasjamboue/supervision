@@ -7,7 +7,7 @@ $brokerConfig = [
 ];
 
 $machineData = [
-    'machine' => 'cuve',
+    'machine' => 'CNC-01',
     'etat' => 'En attente de données MQTT',
     'temperature' => '--',
     'pression' => '--',
@@ -102,6 +102,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <li><strong>Mise à jour :</strong> <?= htmlspecialchars((string) $machineData['updated_at']) ?></li>
             </ul>
 
+            <h3>Test de payload MQTT (simulation)</h3>
+            <p>Collez un JSON reçu d'un topic MQTT pour vérifier l'affichage.</p>
+            <?php if ($payloadError !== null): ?>
+                <p style="color: #b00020;"><?= htmlspecialchars($payloadError) ?></p>
+            <?php endif; ?>
+
+            <form method="post" action="index.php">
+                <textarea name="payload" rows="6" cols="70" placeholder='{"machine":"CNC-01","etat":"Production","temperature":"64°C","pression":"5.2 bar"}'></textarea>
+                <br>
+                <button type="submit">Appliquer le payload</button>
+            </form>
         </section>
     </main>
 
