@@ -11,28 +11,25 @@ body {
     flex-direction: column;
 }
 
-/* NAVBAR */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 17px 20px;
-    background-color: #003a8f;
+    background-color: rgb(0, 86, 119);
     color: white;
 }
 
-header a {
+header a,
+nav a {
     color: white;
     text-decoration: none;
 }
 
 nav a {
     margin: 0 10px;
-    text-decoration: none;
-    color: white;
 }
 
-/* HR GLOBAL (plus propre) */
 hr {
     border: none;
     height: 2px;
@@ -40,30 +37,26 @@ hr {
     margin: 0;
 }
 
-/* LAYOUT */
 main {
     display: flex;
     flex: 1;
 }
 
-/* SIDEBAR */
 aside {
     width: 220px;
     padding: 15px;
-    background-color: #1f2a44;
+    background-color: rgb(13, 163, 221);
     color: white;
     border-right: 2px solid grey;
 }
 
-/* HR DANS SIDEBAR */
 aside hr {
     background-color: rgba(255, 255, 255, 0.2);
     margin: 10px 0;
 }
 
-/* LIENS SIDEBAR */
 aside a {
-    color: #d1d5db;
+    color: #eaf8ff;
     text-decoration: none;
 }
 
@@ -78,20 +71,70 @@ aside ul {
 
 aside li {
     list-style: none;
-    margin-bottom: 20%; /* espace entre les graphiques */
+    margin-bottom: 20%;
 }
 
-/* CONTENU */
 section {
     flex: 1;
     padding: 20px;
     background-color: white;
 }
 
-/* FOOTER */
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px;
+}
+
+table {
+    width: min(100%, 900px);
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #d6dbe3;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(13, 163, 221, 0.15);
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.status.online {
+    background-color: #0a7b33;
+}
+
+.status.offline {
+    background-color: #9b1c1c;
+}
+
+.gauge {
+    width: 170px;
+    height: 12px;
+    border-radius: 8px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.gauge-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);
+}
+
 footer {
     text-align: center;
     padding: 3px;
-    background-color: #003a8f;
+    background-color: rgb(0, 86, 119);
     color: white;
 }
