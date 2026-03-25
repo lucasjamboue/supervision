@@ -56,7 +56,7 @@ aside hr {
 }
 
 aside a {
-    color: #d1d5db;
+    color: #eaf8ff;
     text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ section {
 table {
     width: min(100%, 900px);
     border-collapse: collapse;
-    background-color: #fbfcff;
+    background-color: white;
 }
 
 th,
@@ -100,7 +100,7 @@ td {
 }
 
 th {
-    background-color: #e9eef8;
+    background-color: rgba(13, 163, 221, 0.15);
 }
 
 .status {
